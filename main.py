@@ -27,6 +27,18 @@ def bar_chart():
     plt.show()
 
 
+def donut_chart():
+    df.groupby(['Response Type']).sum().plot(kind='pie', y='Number of Responses', autopct='%1.0f%%',
+                                             colors=['green', 'red', 'gray', 'steelblue'],
+                                             title='Types of Responses')
+    my_circle = plt.Circle((0,0), 0.7, color='white')
+    p=plt.gcf()
+    p.gca().add_artist(my_circle)
+    plt.show()
+
+
 # view_dataframe()
 # pie_chart()
-bar_chart()
+# bar_chart()
+donut_chart()
+
