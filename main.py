@@ -18,6 +18,15 @@ def pie_chart():
     plt.show()
 
 
-view_dataframe()
-pie_chart()
+def bar_chart():
+    plt.bar(df["Response Type"], df["Number of Responses"], color=['red', 'steelblue', 'green', 'gray'])
+    plt.title("Responses to Applications", fontsize=18)
+    plt.xlabel("Response Type", fontsize=14)
+    plt.ylabel("Amount of Responses", fontsize=14)
+    plt.grid(False)
+    plt.show()
 
+
+# view_dataframe()
+# pie_chart()
+bar_chart()
