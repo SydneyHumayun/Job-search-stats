@@ -36,9 +36,3 @@ def donut_chart():
     p.gca().add_artist(my_circle)
     plt.show()
 
-
-# view_dataframe()
-# pie_chart()
-# bar_chart()
-donut_chart()
-
